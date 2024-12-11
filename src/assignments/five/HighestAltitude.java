@@ -10,7 +10,7 @@ public class HighestAltitude {
     }
 
     public static int largestAltitude(int[] gain) {
-        int[] altitude = new int[gain.length+1];
+        int[] altitude = new int[gain.length + 1];
         altitude[0] = 0;
         int largest = altitude[0];
         for (int i = 0; i < gain.length; i++) {

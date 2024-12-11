@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MaxPopulation {
     public static void main(String[] args) {
         int[][] image = {
-                {2000, 20001}
+                {2000, 2001},
+                {2002, 2050}
         };
         int res = maximumPopulation(image);
         System.out.println(res);

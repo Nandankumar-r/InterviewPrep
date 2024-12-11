@@ -21,6 +21,7 @@ public class FlipInvertImage {
     public static void reverseAndInvert(int[] imageRow) {
         int start = 0;
         int end = imageRow.length - 1;
+        //Reverse each row
         while (start < end) {
             int temp = imageRow[start];
             imageRow[start] = imageRow[end];
@@ -28,6 +29,7 @@ public class FlipInvertImage {
             start++;
             end--;
         }
+        //Invert
         for (int i = 0; i < imageRow.length; i++) {
             if (imageRow[i] == 0) {
                 imageRow[i] = 1;
