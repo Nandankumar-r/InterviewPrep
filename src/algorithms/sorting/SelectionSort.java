@@ -14,7 +14,7 @@ public class SelectionSort {
     }
 
     private static void selectionSorting(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             int last = arr.length - i - 1;
             //find the maximum number's index in the array and swap it to it's correct position
             int maxIndex = findMax(0, last, arr);

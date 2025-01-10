@@ -8,7 +8,7 @@ import java.util.Arrays;
     //Worst case - O(n^2) (reverse sorted array)
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = new int[] {1,2,3,4,5,6};
+        int[] arr = new int[] {3,465,123,442,566,3,-1};
         bubbleSortIncreasing(arr);
         System.out.println(Arrays.toString(arr));
         bubbleSortDecreasing(arr);
@@ -36,6 +36,7 @@ public class BubbleSort {
     public static void bubbleSortIncreasing(int[] arr) {
         boolean swapped = false;
         for (int i = 0; i < arr.length - 1; i++) {
+            //j -> 1 to len - i because for every iteration of i the largest element goes to the correct index (right most available index)
             for (int j = 1; j < arr.length - i; j++) {
                 int temp = arr[j-1];
                 if (arr[j] < arr[j-1]) {
