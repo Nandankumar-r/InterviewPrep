@@ -15,13 +15,14 @@ public class InsertionSort {
     private static int[] insertionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             //You keep inserting the next index element to your sort space hence it's called insertion sort.
-            //j decrements till index 0 because we need to check all the elements before it to find its correct index.
+            //j decrements till index 0 (exclusive) because we need to check all the elements before it to find its correct index.
             for (int j = i+1; j > 0 ; j--) {
                 if (arr[j] < arr[j-1]) {
                     int temp = arr[j];
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
                 } else {
+                    //break out from current loop as the number is in its correct place.
                     break;
                 }
             }
