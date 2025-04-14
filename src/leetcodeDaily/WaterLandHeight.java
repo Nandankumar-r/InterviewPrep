@@ -1,4 +1,4 @@
-package assignments.leetcodeDaily;
+package leetcodeDaily;
 
 import java.util.Arrays;
 import java.util.LinkedList;

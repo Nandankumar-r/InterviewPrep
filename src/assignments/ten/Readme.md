@@ -1,4 +1,6 @@
 Classic DP Patterns (Your List)
+https://leetcode.com/discuss/post/458695/dynamic-programming-patterns-by-aatalyk-pmgr/
+
 1. 0/1 Knapsack
    Concept:
 
